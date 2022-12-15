@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        animation-name: moveScaleandSkewAnimation;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        position: absolute;
+        /* animation-delay: 10s; */
+        animation-fill-mode: forwards;
+      }
+
+      /* @keyframes newAnimationForMultipleSteps {
+        0% {
+          background-color: red;
+          top: 10%;
+        }
+        25% {
+          background-color: green;
+          top: 5%;
+        }
+        50% {
+          background-color: blue;
+          top: 15%;
+        }
+        75% {
+          background-color: purple;
+          top: 30%;
+        }
+      } */
+      @keyframes moveScaleandSkewAnimation {
+        from {
+          left: 0;
+          top: 0;
+          transform: rotate(0);
+          background-color: red;
+          border-radius: 0;
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+        }
+        to {
+          left: 50%;
+          top: 50%;
+          transform: rotate(360deg);
+          border-radius: 100%;
+          background: green;
+          box-shadow: 0px 10px 40px rgba(0,0,0,0.9);
+
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

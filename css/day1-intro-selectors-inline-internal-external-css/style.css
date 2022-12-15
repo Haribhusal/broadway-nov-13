@@ -1,0 +1,20 @@
+.mainmenu{
+    background-color: green;
+    font-size: 60px;
+    border: 10px solid yellow;
+
+}
+
+.mainmenu.light{
+    background-color: gray;
+}
+.mainmenu.light .item a{
+    color: red;
+}
+.parent{
+    background-color: orange;
+    padding: 30px;
+}
+.parent .child{
+    background-color: green;
+}

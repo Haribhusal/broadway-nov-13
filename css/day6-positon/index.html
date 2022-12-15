@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        html, body{
+            scroll-behavior: smooth;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: sticky;
+            margin-top: 300px;
+            top: 100px;
+            padding: 30px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+            z-index: 99;
+        }
+        .wrapper {
+            position: relative;
+            height: 400px;
+            width: 500px;
+            background-color: gold;
+            z-index: 98;
+        }
+
+        .wrapper .box {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            /* border: 2px solid black; */
+            border-radius: 100%;
+            background-image: url('https://media-exp1.licdn.com/dms/image/D5603AQHvF0Vc_Nk3tQ/profile-displayphoto-shrink_100_100/0/1669772817362?e=1675900800&v=beta&t=E9IP0dXA_g3pETHxAfCAg0dbKZHE1NvT4VLtvxu6asI');
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+
+            position: absolute;
+            left: 10%;
+            bottom: -40%;
+        }
+
+        .wrapper .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: white;
+            height: 100px;
+            width: 200px;
+            line-height: 100px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        }
+        .gototop{
+            height: 60px;
+            width: auto;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: gold;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top"></div>
+    <header>
+        This is header
+    </header>
+
+    <div class="wrapper">
+
+        <div class="box"></div>
+        <h3 class="title">hari bhusal</h3>
+    </div>
+    <div class="content" style="height: 3000px;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio doloribus eius, quidem tenetur eveniet natus, atque magnam laboriosam rerum veritatis ab laborum commodi autem consequuntur ea consectetur ut at ducimus?
+    </div>
+    <footer>
+        <button class="gototop">
+
+            <a href="#top">
+                go to top 
+            </a>
+        </button>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus{
+            outline: none;
+            border: 2px solid red;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.8);
+        }
+
+        iframe:fullscreen{
+            outline: 10px dotted red;
+            outline-offset: -30px;
+        }
+        .selectAge:in-range{
+            border: 5px solid green;
+
+        }
+        .selectAge:out-of-range{
+            border: 5px solid red;
+
+        }
+    </style>
+</head>
+<body>
+
+    <input type="number" max="23" min="18" class="selectAge">
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+
+
+    <input type="text" id="name" placeholder="Type Here">
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <label for="name">Click here to focus the input box above</label>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1eJmPoqRCtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,20 @@
+:root{
+    --primaryColor: green;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.box1{
+    background-color: var(--primaryColor);
+
+}
+.box2{
+    background-color: var(--primaryColor);
+
+}
+.box3{
+    background-color: var(--primaryColor);
+
+}

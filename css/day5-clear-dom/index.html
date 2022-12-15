@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+        @font-face {
+            font-family: syneMono;
+            src: url('./fonts/SyneMono.ttf');
+        }
+        @font-face {
+            font-family: diplomaaaata;
+            src: url('./fonts/Diplomata.ttf');
+        }
+        body{
+
+            font-size: 16px;
+            font-family: 'Teko', sans-serif;
+            font-weight: 900;
+            line-height: calc(16px * 1.618);
+        }
+        h1,h2,h3,h4,h5,h6{
+            /* font-family: diplomaaaata; */
+            font-family: 'Lobster', cursive;
+
+        }
+        /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+        *{
+            box-sizing: border-box;
+        }
+        .products{
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            /* display: none; */
+        }
+
+        .box{
+            background-color: #fff;
+            border: 5px solid red;
+            padding: 15px;
+            margin-bottom: 10px;
+            /* margin-right: 10px; */
+            outline: 20px solid orange;
+            outline-offset: -30px;
+
+        }
+        .product1{
+            width: 50%;
+            float: left;
+        }
+        .product2{
+            width: 50%;
+            float: left;
+           
+        }
+        .product3{
+            width: 100%;
+            clear: both;
+        }
+        .emptyBox{
+            height: 100px;
+            width: 300px;
+            background-color: red;
+            opacity: 0;
+            /* pointer-events: none; */
+            transition: all 5s ease;
+        }
+        .emptyBox:hover{
+            opacity: 1;
+            pointer-events: all;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="emptyBox">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci aut voluptatem totam, commodi voluptas nam sint quibusdam corrupti dicta. Veniam ad enim aspernatur laudantium distinctio inventore eius nobis sequi?
+    </div>
+
+
+    <div class="products">
+        <div class="product1 box">
+            <h3 class="tilte">Product 1</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product2 box">
+            <h3 class="tilte">Product 2</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product3 box">
+            <h3 class="tilte">Product 3</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product1 box">
+            <h3 class="tilte">Product 1</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product2 box">
+            <h3 class="tilte">Product 2</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product3 box">
+            <h3 class="tilte">Product 3</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product1 box">
+            <h3 class="tilte">Product 1</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product2 box">
+            <h3 class="tilte">Product 2</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product3 box">
+            <h3 class="tilte">Product 3</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product1 box">
+            <h3 class="tilte">Product 1</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product2 box">
+            <h3 class="tilte">Product 2</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product3 box">
+            <h3 class="tilte">Product 3</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product1 box">
+            <h3 class="tilte">Product 1</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product2 box">
+            <h3 class="tilte">Product 2</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product3 box">
+            <h3 class="tilte">Product 3</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product1 box">
+            <h3 class="tilte">Product 1</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product2 box">
+            <h3 class="tilte">Product 2</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product3 box">
+            <h3 class="tilte">Product 3</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product1 box">
+            <h3 class="tilte">Product 1</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product2 box">
+            <h3 class="tilte">Product 2</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+        <div class="product3 box">
+            <h3 class="tilte">Product 3</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium, voluptate totam voluptatum veritatis molestiae.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+    
+
+
+</body>
+</html>

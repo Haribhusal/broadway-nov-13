@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #myText, #titleText{
+            background-color: green;
+            color: red;
+            font-size: 60px;
+            text-decoration: underline;
+        }
+        #titleText{
+            font-size: 40px;
+            text-decoration: line-through;
+            text-decoration-style: dotted;
+            text-decoration-color: yellow;
+            text-align: left;
+            /* border: 10px double yellow; */
+        }
+    </style>
+</head>
+<body>
+
+
+    <p id="myText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est iste adipisci eligendi atque quo accusamus at aut. Suscipit consequatur, unde iste velit tempora iure amet sunt laboriosam in sapiente!</p>
+    <p id="mysecondText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est iste adipisci eligendi atque quo accusamus at aut. Suscipit consequatur, unde iste velit tempora iure amet sunt laboriosam in sapiente!</p>
+
+    <h1 id="titleText">Hello I am Changing From CSS</h1>
+
+    <ul class="mainmenu dark">
+        <li>
+            <a href="#">Homepage</a>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+    </ul>
+    <ul class="mainmenu light">
+        <li class="item">
+            <a href="#">Homepage</a>
+        </li>
+        <li class="item">
+            <a href="#">About</a>
+        </li>
+        <li class="item">
+            <a href="#">Services</a>
+        </li>
+    </ul>
+
+
+    <div class="parent">
+        I am inside parent
+        <div class="child">I am inside children</div>
+    </div>
+
+    <div class="secondparent">
+        I am inside parent
+        <div class="child">I am inside children</div>
+    </div>
+
+    
+
+
+
+</body>
+
+</html>

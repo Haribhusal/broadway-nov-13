@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - FORMS</title>
+
+    <style>
+        input {
+            display: block;
+        }
+
+        .flex {
+            display: flex;
+            gap: 30px;
+        }
+
+        .flex div {
+            display: flex;
+        }
+
+        label {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .form-group {
+            display: flex;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+    <form>
+        <div class="form-group">
+            <label>Title</label>
+            <select>
+                <option>MR.</option>
+                <option>MRS.</option>
+            </select>
+
+        </div>
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" value="hello123" placeholder="eg. johndoe123" required>
+            <!-- <div class="hint">Username hint message</div> -->
+        </div>
+
+        <hr />
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your email" required readonly value="sth@gmail.com">
+            <!-- <div class="hint">email hint message here</div> -->
+        </div>
+
+        <hr />
+
+
+        <div class="form-group">
+            <label for="pass">Password</label>
+            <input id="pass" type="password" placeholder="" required>
+            <!-- <div class="hint">Password hint Message here</div> -->
+        </div>
+
+        <hr />
+
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" max="100" min="18" placeholder="eg. 22" required>
+            <!-- <div class="hint">contact no hint Message here</div> -->
+        </div>
+
+        <hr />
+
+        <div class="form-group flex">
+            <strong>Please Select Gender</strong>
+            <div>
+                <input id="male" type="radio" name="selectingGender">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input id="female" type="radio" name="selectingGender">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input id="notsay" type="radio" name="selectingGender">
+                <label for="notsay">Rather not to say</label>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="form-group flex">
+            <strong>Please Select Your Favourite Game</strong>
+            <div>
+                <input id="cric" type="checkbox" name="selectingFavGame">
+                <label for="cric">Cricket</label>
+            </div>
+            <div>
+                <input id="football" type="checkbox" name="selectingFavGame">
+                <label for="football">Football</label>
+            </div>
+            <div>
+                <input id="volleyball" type="checkbox" name="selectingFavGame">
+                <label for="volleyball">Volleyball</label>
+            </div>
+            <div>
+                <input id="basketball" type="checkbox" name="selectingFavGame">
+                <label for="basketball">Basketball</label>
+            </div>
+        </div>
+        
+        <hr />
+        <div class="form-group">
+            <label>About yourself</label>
+            <textarea rows="5"></textarea>
+        </div>
+        <hr />
+
+        <div class="form-group">
+            <label>Upload your profile picture</label>
+            <input type="file">
+        </div>
+        <hr />
+
+
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+
+</html>

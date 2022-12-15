@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CANVAS SVG</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    
+    <!-- <button id="myButton">Click here to change the text</button>
+    <h1 id="myText" style="color: red;">Hello JAVASCRIPT</h1> -->
+
+   
+    
+    <canvas id="myCanvas" height="200" width="500" style="border: 1px solid red"></canvas>
+
+    <script>
+
+        var myElementToDrawALine = document.getElementById('myCanvas');
+
+        var context = myElementToDrawALine.getContext('2d');
+        context.moveTo(0,0);
+        context.lineTo(500,200);
+        context.stroke();
+
+        // var myTextBox = document.getElementById('myText');
+        // var myButtonToClick = document.getElementById('myButton');
+
+        // myButtonToClick.addEventListener('click',function(){
+        //     myTextBox.innerText = 'I am now coming from js'
+        //     myTextBox.style.color='green';
+        // })
+    </script>
+
+
+</body>
+</html>
