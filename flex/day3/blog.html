@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            display: flex;
+            align-items: center;
+            background-color: yellow;
+            column-gap: 30px;
+            flex-direction: row;
+        }
+
+        @media screen and (max-width: 992px){
+            article{
+                flex-direction: column;
+            }
+            article  .info{
+                order: 1;
+                flex: 1;
+            }
+            article  figure{
+                order: 2;
+                flex: 1;
+                width: 100%;
+            }
+        }
+
+        article figure{
+            flex: 2;
+            background-color: white;
+            margin: 0;
+        }
+        article figure img{
+            height: 100%;
+            width: 100%;
+        }
+        article .info{
+            flex: 5;
+            padding: 20px;
+        }
+        article .info h3{
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <figure>
+            <img src="https://picsum.photos/id/23/500/400" alt="random image">
+        </figure>
+        <div class="info">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, error?</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et iusto officia repellat, esse facere voluptatibus nisi delectus obcaecati hic, mollitia, libero dolorem! Magni et nemo, ipsa quisquam architecto eligendi nesciunt quibusdam fuga unde perferendis commodi. Minima harum facere commodi iste.</p>
+
+            <a href="#">
+                <button>Read More</button>
+            </a>
+        </div>
+    </article>
+</body>
+</html>

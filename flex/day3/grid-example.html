@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            height: 100vh;
+        }
+
+        header{
+            grid-column: 1/11;
+            background-color: red;
+            grid-row: 1/2;
+            text-align: center;
+        }
+
+        aside{
+            grid-row: 4/10;
+            background-color: black;
+            grid-column: 1/4;
+        }
+        section{
+            grid-row: 4/10;
+            background-color: yellow;
+            grid-column: 4/11;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer{
+            grid-row: 10/11;
+            background-color: orange;
+            grid-column: 1/11;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <header>this is header</header>
+
+    <aside>this is aside and it has menu link</aside>
+    <section>this is main content area</section>
+    <footer>this is footer</footer>
+
+</body>
+</html>
