@@ -1,0 +1,11 @@
+@keyframes fadeInUp {
+    from{
+        /*  */
+        top: calc(100% + 30px);
+    }
+    to{
+        top: 100%;
+
+    }
+    
+}
