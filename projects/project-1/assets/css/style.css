@@ -1,5 +1,4 @@
 @import url('./keyframes.css');
-
 @import url('./modules.css');
 
 *{
@@ -11,8 +10,10 @@
 :root{
     --primary: #5525DD;
     --secondary: #FA9B4E;
+    --secondaryOpacity: #fa9b4e26;
     --primaryOpacity: #5625dd12;
     --white: #ffffff;
+    --footerBg: rgb(0, 8, 52);
 }
 
 body{
@@ -236,10 +237,13 @@ header .cartIcon .count{
 
 .featuredProducts{
     padding: 60px 30px;
-    background-color: var(--primaryOpacity);
+    background-color: var(--secondaryOpacity);
     display: flex;
     column-gap: 32px;
     align-items: center;
+}
+.recentlyAddedProducts{
+    background-color: white;
 }
 .featuredProducts .info{
     flex: 1;
@@ -249,6 +253,12 @@ header .cartIcon .count{
     gap: 32px;
     grid-template-columns: repeat(2, 1fr);
 }
+.recentlyAddedProducts .products{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
 .featuredProducts .btn{
     margin-left: 0px;
 }
@@ -293,6 +303,22 @@ header .cartIcon .count{
     justify-content: flex-end;
     column-gap: 10px;
 }
+
+.recentlyAddedProducts .products .actions{
+    grid-column: 1/4;
+    justify-content: space-between;
+}
+
+.recentlyAddedProducts .products a{
+    background-color: var(--white)
+}
+
+.recentlyAddedProducts .products .actions .buttons{
+    
+    display: flex;
+   
+    column-gap: 10px;
+}
 .featuredProducts .products .actions i{
     height: 40px;
     width: 40px;
@@ -302,3 +328,164 @@ header .cartIcon .count{
     align-items: center;
     justify-content: center;
 }
+
+.cta{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    /* height: 40vh; */
+    /* margin: 60px 0; */
+}
+.cta .textpart .title{
+    margin-bottom: 30px;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: bolder;
+
+}
+.cta .btn{
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+.cta .imagearea {
+position: relative;   
+flex: 2; 
+}
+
+.cta .imagearea img{
+    margin-top: -50px;
+}
+.cta .textpart{
+    flex: 3;
+}
+
+.linksection{
+    background-color: var(--footerBg);
+    color: #a1a1a1;
+    padding: 60px 30px;
+    display: flex;
+}
+.linksection .item{
+    padding: 30px;
+}
+.linksection .item .title{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.linksection .brandinfo{
+    flex: 3;
+}
+.linksection .recent{
+    flex: 2;
+}
+.linksection .subscribe{
+    flex: 3;
+}
+.linksection hr{
+    opacity: 0.2;
+    margin: 15px 0;
+}
+ .linksection .social{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+ }
+ .linksection .social li a{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  border-radius: 4px;
+    color: #fff;
+    transition: all 0.5s ease-in;
+    
+ }
+ .linksection .social li a:hover{
+    background-color: rgba(255,255, 255, 1);
+    color: var(--footerBg);
+
+ }
+
+ .linksection .social li a i{
+    font-size: 24px;
+ }
+  .linksection .added li{
+    position: relative;
+    display: flex;
+    transition: all 0.5s ease;
+    
+  }
+
+  .linksection .added li:hover{
+    padding-left: 10px;
+  }
+  .linksection .added li::before{
+    content: '\f101';
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+  }
+  .linksection .added li:hover::before{
+   display: block;
+  }
+  .linksection .recent a{
+    color: #a1a1a1;
+    display: block;
+    padding: 5px 0;
+  }
+
+  .linksection .recent a:hover{
+    color: var(--white);
+  }
+  .linksection .subscribe form{
+    display: flex;
+
+
+  }
+  .linksection .subscribe form input{
+    
+padding: 10px 15px;
+outline: none;
+color: #fff;
+border: 1px solid rgba(255,255, 255, 0.4);
+background-color: transparent;
+  }
+  .linksection .subscribe form button{
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    
+  }
+  .buttomSection{
+    padding: 10px 30px;
+    border-top: 1px dashed rgba(255,255, 255, 0.4);
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buttomSection .menu{
+    display: flex;
+    gap: 15px;
+  }
+  .buttomSection a{
+    color: #a1a1a1;
+    display: inline-block;
+    padding: 5px 0;
+  }
+
+  .buttomSection  a:hover{
+    color: var(--white);
+  }
+
+  footer .item{
+    border-right: 1px dashed rgba(255,255, 255, 0.2);
+  }
